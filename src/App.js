@@ -7,6 +7,7 @@ import Filter from './components/Filter';
 import ProductList from './pages/ProductList';
 import ProductDetails from './pages/ProductDetails';
 import SplashScreen from './pages/SplashScreen';
+import Onboarding from './pages/Onboarding';
 
 function App() {
   // const [shoppingCart, setShoppingCart] = useState([]);
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Routes>
           <Route path={"/"} element={<SplashScreen />} />
+          <Route path={'/onboarding'} element={<Onboarding />} />
           <Route path={"/home"} element={<HomePage />} />
           <Route path={"/filter"} element={<Filter />} />
           {/* <Route path={"/shoppingcart"} element={<ShoppingCart />} /> */}

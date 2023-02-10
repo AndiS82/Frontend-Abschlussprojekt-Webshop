@@ -3,6 +3,7 @@ import Icon from "../assets/img/E-Shop_Icon.svg"
 import ShopVector from "../assets/img/E-Shop_Vector.svg"
 import { Link } from "react-router-dom";
 import { Navigate } from "react-router-dom";
+import "./SplashScreen.css"
 
 
 function SplashScreen() {
@@ -10,16 +11,14 @@ function SplashScreen() {
 
     setTimeout(function () {
         setGoToOnboarding(true);
-    }, 5000)
+    }, 3000)
 
     if (goToOnboarding === false) {
         return (
             <>
                 <Link to={"/onboarding"}>
-                    <div>
+                    <div id='onboarding'>
                         <img alt="" src={Icon}></img><br />
-                        <img alt="" src={ShopVector}></img>
-                        <p>Your Shopping Solution</p>
                     </div>
                 </Link>
             </>
